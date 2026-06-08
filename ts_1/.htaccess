@@ -1,0 +1,2 @@
+RewriteCond "%{HTTP_REFERER}" "!yii10.ua" [NC]
+RewriteRule "\.(zip|mp4|avi|mov)$" "-" [F,NC]
