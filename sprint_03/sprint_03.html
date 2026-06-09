@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sprint 02. TypeScript - itgid.info</title>
+  <meta name="author" content="itgid.info">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/night.css">
+  <link rel="icon" type="image/svg+xml" href="https://itgid.info/favicon.svg">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-column">
+        <h1>TypeScript. Sprint 03</h1>
+        <p>course <a href="https://itgid.info">itgid.info</a></p>
+
+        <p>Для застосування теми «ніч» зніміть коментар з night.css.</p>
+        <p>Умова: там, де не вказано спосіб задання типу даних, тип задається явно.</p>
+
+        <section>
+          <h3>Task 01</h3>
+          <p>При натисканні кнопки .b-1 запускається функція f01. Функція повинна присвоїти змінній s_1 текст, введений у input.i-1. Тип змінної s_1 визначте самостійно. Для перевірки виведіть s_1 у консоль.</p>
+
+          <div><input type="text" class="i-1"></div>
+
+          <div><button class="button-primary b-1">button b-1</button></div>
+
+        </section>
+
+        <section>
+          <h3>Task 02</h3>
+          <p>При натисканні кнопки .b-2 запускається функція f02. Функція повинна присвоїти змінній res_2 число, введене у input.i-2. Тип змінної res_2 визначте самостійно. Для перевірки виведіть res_2 у консоль.</p>
+
+          <div><input type="number" class="i-2"  value="77"></div> 
+
+          <div><button class="button-primary b-2">button b-2</button></div>
+
+        </section>
+
+        <section>
+          <h3>Task 03</h3>
+          <p>Створено дві змінні n_31 і n_32. Напишіть функцію f03, яка присвоює у змінну max_3 більше значення з цих двох змінних. Для перевірки виведіть max у консоль.</p>
+
+          <div><button class="button-primary b-3">button b-3</button></div>
+        </section>
+
+        <section>
+          <h3>Task 04</h3>
+          <p>Напишіть функцію f04, яка отримує два числа з input.i-41 та input.i-42 і менше з них присвоює у змінну min_4. Тип даних min_4 визначте самостійно. Для перевірки виведіть min_4 у консоль.</p>
+
+          <div><input type="number" class="i-41"  value="77"></div>
+
+          <div><input type="number" class="i-42"  value="27"></div>
+
+          <div><button class="button-primary b-4">button b-4</button></div>
+
+        </section>
+
+        <section>
+          <h3>Task 05</h3>
+          <p>Напишіть функцію f05, яка перевіряє, що в input.i-51 та input.i-52 введені числа, і за позитивного результату перевірки в змінну sum_5 кладеться результат — сума цих чисел, а за негативного результату у змінну error_5 (початкове значення завжди false) записується true. Типи даних визначіть самостійно. Виведіть змінні у консоль.</p>
+
+          <div><input type="text" class="i-51"  value="23"></div>
+
+          <div><input type="text" class="i-52"  value="17"></div>
+
+          <div><button class="button-primary b-5">button b-5</button></div>
+
+        </section>
+
+        <section>
+          <h3>Task 06</h3>
+          <p>Напишіть функцію f06, яка перевіряє, що в input.i-61 та input.i-62 введені рядки, які можна привести до чисел. За позитивного результату перевірки у змінну sum_6 записується сума цих чисел, а у змінну error_6 — false. За негативного результату у змінну error_6 записується true, а у змінну sum_6 — 0. Типи даних визначіть самостійно. Змінну sum_6 виведіть у .out-6. Змінну error_6 — у консоль.</p>
+
+          <div><input type="text" class="i-61"  value="23"></div>
+
+          <div><input type="text" class="i-62"  value="17b"></div>
+
+          <div><button class="button-primary b-6">button b-6</button></div>
+
+          <div class="out out-6"></div>
+        </section>
+
+        <section>
+          <h3>Task 07</h3>
+          <p>Функція f07 отримує рядки з input.i-71 та input.i-72. У змінну max_7 вона повинна записати більший з двох рядків шляхом прямого порівняння. Тип змінної max_7 визначте самостійно. Виведіть max_7 у .out-7.</p>
+
+          <div><input type="text" class="i-71"  value="9"></div>
+
+          <div><input type="text" class="i-72"  value="17b"></div>
+
+          <div><button class="button-primary b-7">button b-7</button></div>
+
+          <div class="out out-7"></div>
+        </section>
+
+        <section>
+          <h3>Task 08</h3>
+          <p>Функція f08 повинна прочитати вибране value з select.s-8 і записати його у змінну val_8. Тип val_8 визначте самостійно. Виведіть val_8 у .out-8.</p>
+          
+          <div>
+            <select class="s-8">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+            </select>
+          </div>
+
+          <div><button class="button-primary b-8">button b-8</button></div>
+          
+          <div class="out out-8"></div>
+        </section>
+
+        <section>
+          <h3>Task 09</h3>
+          <p>Створіть змінну val_9 і призначте їй будь-яке ціле число від 2 до 6. Тип даних визначте самостійно. Напишіть функцію f09, яка при запуску зробить option всередині select.s-9 з таким value selected. Значення val_9 виводьте у .out-9.</p>
+          
+          <div>
+            <select class="s-9">
+              <option value="2">two</option>
+              <option value="3">three</option>
+              <option value="4">four</option>
+              <option value="5">five</option>
+              <option value="6">six</option>
+            </select>
+          </div>
+          
+          <div><button class="button-primary b-9">button b-9</button></div>
+
+          <div class="out out-9"></div>
+
+        </section>
+
+        <section>
+          <h3>Task 10</h3>
+          <p>Створіть змінну res_10 типу boolean зі значенням false. При зміні стану checkbox.ch-10 змінюйте вміст змінної res_10. Якщо checkbox вибрано, записуйте true, якщо ні — false. Виводьте res_10 у .out-10.</p>
+
+          <div><label><input type="checkbox" class="ch-10"> checkbox ch-10</label></div>
+
+          <div class="out out-10"></div>
+
+        </section>
+
+        <section>
+          <h3>Task 11</h3>
+          <p>Створіть змінну res_11 типу number зі значенням 0. При зміні стану checkbox.ch-11 змінюйте вміст res_11. Якщо checkbox вибрано, записуйте в res_11 значення value, якщо ні — 0. Виводьте res_11 у .out-11.</p>
+
+          <div>
+            <label>
+              <input type="checkbox" class="ch-11" value="100"> checkbox ch-11
+            </label>
+          </div>
+
+          <div class="out out-11"></div>
+
+        </section>
+
+        
+        <section>
+          <h3>Task 12</h3>
+          <p>Створіть змінну res_12 типу number зі значенням 0. При натисканні кнопки .b-12 функція повинна читати вміст res_12 і якщо він дорівнює 1, робити checkbox.ch-12 стан checked, а якщо дорівнює нулю — скидати checked.</p>
+
+          <div>
+            <label>
+              <input type="checkbox" class="ch-12"> checkbox ch-12
+            </label>
+          </div>
+
+          <div><button class="button-primary b-12">button b-12</button></div>
+
+        </section>
+
+        <section>
+          <h3>Task 13</h3>
+          <p>Функція f13 отримує з input.i-13 число і виводить у .out-13 рядок виду 43210, тобто від введеного числа до нуля. Якщо ввели 5, то вивід має бути 543210.</p>
+          
+          <div><input type="number" class="i-13" value = "3"></div>
+
+          <div><button class="button-primary b-13">button b-13</button></div>
+
+          <div class="out out-13"></div>
+
+        </section>
+
+        <section>
+          <h3>Task 14</h3>
+          <p>Функція f14 отримує з input.i-14 число і присвоює змінній res_14 true, якщо введене число парне, або false, якщо непарне. Змінну res_14 виведіть у .out-14.</p>
+
+          <div><input type="number" class="i-14" value = "3"></div>
+
+          <div><button class="button-primary b-14">button b-14</button></div>
+
+          <div class="out out-14"></div>
+        </section>
+
+        <section>
+          <h3>Task 15</h3>
+          <p>Створіть змінну s_15 зі значенням 'cdcdbdcsd' і змінну res_15. Функція має порахувати, скільки в змінній s_15 символів 'c'. Кількість присвоїти змінній res_15. Функція має виводити s_15 у .out-151 і res_15 у .out-152.</p>
+          
+          <div><button class="button-primary b-15">button b-15</button></div>
+
+          <div class="out out-151"></div>
+          <div class="out out-152"></div>
+
+        </section>
+
+        <section>
+          <h3>Task 16</h3>
+          <p>Створено елемент input.i-16. При введенні символів у нього виводьте кількість введених символів у змінну res_16. Виводьте змінну res_16 у .out-16.</p>
+
+          <div><input type="text" class="i-16"></div>
+
+          <div class="out out-16"></div>
+        </section>
+
+        <section>
+          <h3>Task 17</h3>
+          <p>Створіть змінну res_17 типу boolean зі значенням false. Створено елемент input.i-17. Функція при натисканні кнопки читає вміст res_17 і якщо значення false — робить input.i-17 disabled. Якщо true — enabled.</p>
+          
+          <div><input type="text" class="i-17" value="hello"></div>
+
+          <div><button class="button-primary b-17">button b-17</button></div>
+
+        </section>
+
+        <section>
+          <h3>Task 18</h3>
+          <p>Створіть рядкову змінну s_18 зі значенням '10000'. Створіть змінну count_18 зі значенням 0. При натисканні кнопки .b-18 запускається функція f18. Функція додає одиницю до count_18, а потім робить s_18[count_18] рівним одиниці. Інші символи рядка — 0.</p>
+          <ul>
+                <li>Тобто коли count = 0, рядок виглядає як '10000'</li>
+                <li>Тобто коли count = 1, рядок виглядає як '01000'</li>
+                <li>Тобто коли count = 2, рядок виглядає як '00100'</li>
+                <li>Тобто коли count = 3, рядок виглядає як '00010'</li>
+                <li>Тобто коли count = 4, рядок виглядає як '00001'</li>
+              <li>Виведіть count_18 у .out-181 і s_18 у .out-182</li>
+            </ul>
+
+          <div>
+            <button class="button-primary b-18">button b-18</button>
+          </div>
+
+          <div class="out out-181"></div>
+
+          <div class="out out-182"></div>
+
+        </section>
+
+        <section>
+          <h3>Task 19</h3>
+          <p>Створіть за допомогою циклу рядок s_19, у якій йде послідовність 5_x_3_x_1_x_. Тобто користувач вводить число, наприклад 5, а функція генерує рядок від 5 до 0 і замінює парні числа на x. Роздільник — підкреслення. Число функція бере з input.i-19. Виведіть рядок у .out-19.</p>
+
+          <div><input type="text" class="i-19" value="5"></div>
+
+          <button class="button-primary b-19">button b-19</button>
+
+          <div class="out out-19"></div>
+
+        </section>
+
+        <section>
+          <h3>Task 20</h3>
+          <p>Створіть змінну s_20, куди покладете значення нуль. При натисканні кнопки запускається функція f20, яка отримує число з .i-20 і рахує суму ряду чисел від введеного до нуля. Наприклад, введено 5, шуканою сумою є 5 + 4 + 3 + 2 + 1. Сума присвоюється s_20. Виведіть s_20 у .out-20.</p>
+
+          <div><input type="text" class="i-20" value="5"></div>
+
+          <button class="button-primary b-20">button b-20</button>
+
+          <div class="out out-20"></div>
+
+        </section>
+
+      </div>
+      
+      <div class="one-column">
+        <footer>
+          <p>Курсы Itgid.info</p>
+          <p><a href="https://itgid.info/ru/course/js20">javascript 2.0</a> | <a href="https://itgid.info/ru/course/arraymethod">Методы массивов JavaScript</a> | <a href="https://itgid.info/ru/course/function-2021">Функции JavaScript</a> | <a href="https://itgid.info/ru/course/reactjs">ReactJS</a></p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="./javascript/sprint_03.js"></script>
+</body>
+
+</html>
