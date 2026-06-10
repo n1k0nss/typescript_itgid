@@ -212,7 +212,11 @@ let s_19;
 function f19() {
     let input = document.querySelector('input.i-19');
     let inputValue = +input.value;
-    s_19 = [...new Array(inputValue + 1)].map((_, i) => (inputValue - i) % 2 === 1 ? `${inputValue - i}` : 'x').join('_');
+    // s_19 = [...new Array(inputValue + 1)].map((_, i) => (inputValue - i) % 2 === 1 ? `${inputValue - i}` : 'x').join('_');
+    s_19 = '';
+    for (let i = inputValue; i >= 0; i--) {
+        s_19 += i % 2 === 1 ? `${i}_` : 'x_';
+    }
     document.querySelector('.out-19').textContent = s_19;
 }
 document.querySelector('.b-19')?.addEventListener('click', f19);

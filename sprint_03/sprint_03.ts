@@ -137,7 +137,7 @@ document.querySelector('.b-7')?.addEventListener('click', f07);
 let val_8: string;
 
 function f08 () : void {
-    let val_8: string = (document.querySelector('select.s-8') as HTMLInputElement).value;
+    let val_8: string = (document.querySelector('select.s-8') as HTMLSelectElement).value;
     (document.querySelector('.out-8') as HTMLElement).textContent = val_8;
 }
 
@@ -311,7 +311,12 @@ function f19 () : void {
     let input: HTMLInputElement = (document.querySelector('input.i-19') as HTMLInputElement);
     let inputValue: number = +input.value;
 
-    s_19 = [...new Array(inputValue + 1)].map((_, i) => (inputValue - i) % 2 === 1 ? `${inputValue - i}` : 'x').join('_');
+    // s_19 = [...new Array(inputValue + 1)].map((_, i) => (inputValue - i) % 2 === 1 ? `${inputValue - i}` : 'x').join('_');
+
+    s_19 = '';
+    for (let i = inputValue; i >= 0; i--) {
+        s_19 += i % 2 === 1 ? `${i}_` : 'x_';
+    }
 
     (document.querySelector('.out-19') as HTMLElement).textContent = s_19;
 }

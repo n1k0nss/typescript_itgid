@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sprint 04. TypeScript - itgid.info</title>
+  <meta name="author" content="itgid.info">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/night.css">
+  <link rel="icon" type="image/svg+xml" href="https://itgid.info/favicon.svg">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-column">
+        <h1>TypeScript. Sprint 04</h1>
+        <h2>Функції в TypeScript</h2>
+        <p>course <a href="https://itgid.info">itgid.info</a></p>
+
+        <p>Для застосування теми "ніч" видаліть коментар з night.css.</p>
+        <p>Умова: скрізь де не сказано про спосіб задання типу даних – тип задається явно.</p>
+
+        <section>
+          <h3>Task 01</h3>
+          <p>У TS можна використовувати прості функції. Але не цікаво. Приклад функції - аналог того, що ми писали в JS. Запустіть, перегляньте результат. Зверніть увагу, функція продовжуватиме роботу при return '4', return false. Тобто ніякого контролю над типами даних немає.</p>
+        </section>
+
+        
+        <section>
+          <h3>Task 02</h3>
+          <p>У TS логічніше застосовувати контроль того, що повертає функція. Тобто вказувати тип даних. Подивіться на приклад. Запустіть. Тепер замініть return 44 на return '44'. Код не компілюється та видасть помилку. Поверніть return 44. Контролювати тип даних, який повертає функція – найбільш коректний підхід у TS.</p>
+        </section>
+
+        <section>
+          <h3>Task 03</h3>
+          <p>Якщо функція в TS виступає як обгортка для угруповання дій і не передбачає повертати значення, то просто напишіть: void. У багатьох мовах програмування такі функції називають процедури. Зверніть увагу, якщо після цього ви вирішите дописати до процедури return, то компілятор видасть помилку. Напишіть return 55; та перевірте. Після цього закоментуйте return 55.</p>
+        </section>
+
+        <section>
+          <h3>Task 04</h3>
+          <p>Напишіть функцію, яка повертає випадкове ціле число від 0 до 100. Результат виведіть у .out-4. Тип даних функції вкажіть відповідно до завдання.</p>
+          <div><button class="b-4 button-primary">button 4</button></div>
+          <div class="out-4 out"></div>
+        </section>
+
+        
+        <section>
+          <h3>Task 05</h3>
+          <p>Напишіть функцію f05 тип string, яка повертає випадковий символ рядка s5. Випадковий символ виведіть у .out-5.</p>
+          <div><button class="b-5 button-primary">button 5</button></div>
+          <div class="out-5 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 06</h3>
+          <p>Напишіть функцію f06, яка повертає максимальне із трьох чисел n61, n62, n63. Тип даних функції вкажіть явно.</p>
+          <div><button class="b-6 button-primary">button 6</button></div>
+          <div class="out-6 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 07</h3>
+          <p>Напишіть процедуру f07, яка виводить випадкове ціле число від 150 до 170 у .out-7.</p>
+          <div><button class="b-7 button-primary">button 7</button></div>
+          <div class="out-7 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 08</h3>
+          <p>У TS аргументи функції можуть мати задані типи даних. Це спрощує написання коду та знижує кількість помилок у коді. Вивчіть код. Спробуйте передати не (5, 6), а ('5', 6). Вивчіть помилку компіляції та поверніть аргументи (5, 6).</p>
+        </section>
+
+        <section>
+          <h3>Task 09</h3>
+          <p>У TS, на відміну від JS, проводиться контроль кількості аргументів. Тобто якщо в JS передати більше аргументів ніж належить, то помилки не буде. А ось у TS так робити не можна. Видаліть коментар із рядка запуску і подивіться як поведеться компілятор. Після – поверніть коментар.</p>
+        </section>
+
+        <section>
+          <h3>Task 10</h3>
+          <p>Напишіть функцію f10, яка приймає 4 числа і повертає менше з них. Тип даних функції, аргументи та типи аргументів вкажіть самостійно.</p> 
+          <div><button class="b-10 button-primary">button 10</button></div>
+          <div class="out-10 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 11</h3>
+          <p>Напишіть функцію, яка приймає два аргументи і повертає ціле випадкове число від першого аргументу включно до другого аргументу включно. Тип функції та аргументів задайте самостійно.</p> 
+          <div><button class="b-11 button-primary">button 11</button></div>
+          <div class="out-11 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 12</h3>
+          <p>Напишіть функцію перевірки пароля. Функція приймає рядок. Якщо пароль менший або дорівнює 8 символів, то функція повертає false, якщо більше – повертає true. Пароль повинен містити щонайменше один символ у верхньому регістрі. Тип даних функції, аргументи та типи аргументів вкажіть самостійно.</p> 
+          <div><button class="b-12 button-primary">button 12</button></div>
+          <div class="out-12 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 13</h3>
+          <p>У деяких випадках функції мало одного значення. Наприклад, якщо у функції потрібно робити перевірки. Давайте ускладнимо попередню задачу – користувач вводить пароль. Якщо довжина пароля менша або дорівнює восьми символам, функція повертає false. Якщо більше – то сам пароль. Тобто формально тепер функція може повертати і string і boolean. Розберіть приклад.</p> 
+          <div><button class="b-13 button-primary">button 13</button></div>
+          <div class="out-13 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 14</h3>
+          <p>Давайте напишемо тепер класичну функцію. Функція повертає результат ділення першого числа на друге. Однак додамо перевірку. Якщо другий аргумент дорівнює нулю – повертається false. Типи функції та аргументів напишіть самостійно.</p> 
+          <div><button class="b-14 button-primary">button 14</button></div>
+          <div class="out-14 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 15</h3>
+          <p>Тепер давайте розкриємо потенціал такого підходу – подивимося, що можуть дати функції з двома типами даних. Повернемося до задачі пароля. Розгляньте функцію та проаналізуйте її роботу. Спробуйте передати пароль 'RickSanchez' та 'Rick'.</p> 
+          <div><button class="b-15 button-primary">button 15</button></div>
+          <div class="out-15 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 16</h3>
+          <p>Напишіть функцію, яка може повертати або boolean або число. Функція приймає рядок, і якщо цей рядок можна перетворити до числа, то повертає число, якщо ні – false.</p> 
+          <div><button class="b-16 button-primary">button 16</button></div>
+          <div class="out-16 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 17</h3>
+          <p>Напишіть функцію, яка приймає ім'я класу як рядок, і повертає текст із елемента DOM з таким класом. Текст повинен бути очищений від прогалин по краях рядка. Якщо такого елемента немає – повертає false. Типи функції та аргументів напишіть самостійно.</p> 
+
+          <div><button class="b-17 button-primary">button 17</button></div>
+          <p class="p-17">  Night Family </p>
+          <div class="out-17 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 18</h3>
+          <p>У функцію TS можна передавати необов'язкові параметри. Вивчіть, як працює функція f18.</p> 
+
+          <div><button class="b-18 button-primary">button 18</button></div>
+        </section>
+
+        <section>
+          <h3>Task 19</h3>
+          <p>Напишіть функцію, яка приймає 2 необов'язкових аргументи – рядки і повертає більший за довжиною рядок. Якщо передано один аргумент – повертає його. Якщо аргументи не передані – повертає порожній рядок. Типи функції та аргументів напишіть самостійно.</p> 
+          <div><button class="b-19 button-primary">button 19</button></div>
+        </section>
+
+        <section>
+          <h3>Task 20</h3>
+          <p>Напишіть функцію, яка приймає два необов'язкових аргументи – числа. І якщо вони задані – генерує та повертає випадкове ціле у вказаному діапазоні, а якщо не вказані – повертає випадкове ціле число від 0 до 100.</p> 
+          <div><button class="b-20 button-primary">button 20</button></div>
+          <div class="out out-20"></div>
+        </section>
+       
+      </div>
+      
+      <div class="one-column">
+        <footer>
+          <p>Курси Itgid.info</p>
+          <p><a href="https://itgid.info/ru/course/js20">javascript 2.0</a> | <a href="https://itgid.info/ru/course/arraymethod">Методи масивів JavaScript</a> | <a href="https://itgid.info/ru/course/function-2021">Функції JavaScript</a> | <a href="https://itgid.info/ru/course/reactjs">ReactJS</a></p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="./javascript/sprint_04.js"></script>
+</body>
+
+</html>
